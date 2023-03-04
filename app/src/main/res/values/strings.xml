@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AllFootball</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="player_name">Name</string>
+    <string name="player_number">Number:</string>
+    <string name="player_position">Position:</string>
+    <string name="btn_table">Таблица</string>
+    <string name="btn_news">Новости</string>
+    <string name="btn_stats">Статистика</string>
+    <string name="btn_settings">Настройки</string>
+
+    <string name="betmatch">BETMATCH</string>
+    <string name="txtNumber">№</string>
+    <string name="txtTeam">Команда</string>
+    <string name="txtGames">И</string>
+    <string name="txtWons">В</string>
+    <string name="txtDraws">Н</string>
+    <string name="txtWins">П</string>
+    <string name="txtGoals">Мячи</string>
+
+    <string name="russia">Россия</string>
+    <string name="england">Англия</string>
+    <string name="germany">Германия</string>
+    <string name="spain">Испания</string>
+    <string name="titleStatistics">Статистика</string>
+    <string name="txtTournament">Турнир</string>
+    <string name="txtShots1">Удары з.и.</string>
+    <string name="txtTakes">Отборы з.и.</string>
+    <string name="txtRating">Рейтинг</string>
+    <string name="txtDefense">Оборона</string>
+    <string name="txtAttack">Атака</string>
+    <string name="switchNotification">Уведомления</string>
+    <string name="switchDarkTheme">ТЁМНАЯ ТЕМА</string>
+    <string name="titleSettings">Настройки</string>
+    <string name="txtWallpapers">Обои</string>
+    <string name="txtChange">Change</string>
+    <string name="txtDribbling">Дриблинг</string>
+    <string name="txtNews">Новости</string>
+</resources>

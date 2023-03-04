@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_splash">
+
+    <fragment
+        android:id="@+id/navigation_main"
+        android:name="com.naqswell.allfootball.screens.main.MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_to_countries"
+            app:destination="@id/navigation_countries"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_to_stats"
+            app:destination="@id/navigation_stats"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_to_settings"
+            app:destination="@id/navigation_settings"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_to_news"
+            app:destination="@id/navigation_news"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_splash"
+        android:name="com.naqswell.allfootball.screens.SplashFragment"
+        tools:layout="@layout/fragment_splash"
+        >
+        <action
+            android:id="@+id/action_to_main"
+            app:destination="@id/navigation_main"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@+id/navigation_splash"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.naqswell.allfootball.screens.settings.SettingsFragment"
+        tools:layout="@layout/fragment_settings"
+        >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_countries"
+        android:name="com.naqswell.allfootball.screens.countries.CountriesFragment"
+        tools:layout="@layout/fragment_countries"
+        >
+        <action
+            android:id="@+id/action_to_table"
+            app:destination="@id/navigation_table"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_table"
+        android:name="com.naqswell.allfootball.screens.countries.table.TableFragment"
+        tools:layout="@layout/fragment_table"
+        >
+        <argument
+            android:name="countryType"
+            app:argType="com.naqswell.allfootball.domain.enums.Countries"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_stats"
+        android:name="com.naqswell.allfootball.screens.stats.StatsFragment"
+        tools:layout="@layout/fragment_stats"
+        >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.naqswell.allfootball.screens.news.NewsFragment"
+        tools:layout="@layout/fragment_news"
+        >
+    </fragment>
+
+</navigation>

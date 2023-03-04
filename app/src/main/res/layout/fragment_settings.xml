@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtSettingsTitle"
+        style="@style/CustomTitleTextView"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_72sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:text="@string/titleSettings"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/switchNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/switchDarkTheme"
+        app:layout_constraintTop_toBottomOf="@+id/txtSettingsTitle"
+        android:text="@string/switchNotification"
+        android:autoSizeTextType="uniform"
+        android:textStyle="italic|bold"
+        android:switchPadding = "100dp"
+        android:textAllCaps="true"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:thumbTint="@color/orange"
+        app:trackTint="@color/blue"
+        android:textColor="?colorPrimary"
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchDarkTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchNotification"
+        app:layout_constraintBottom_toTopOf="@+id/txtWallpapers"
+        android:text="@string/switchDarkTheme"
+        android:autoSizeTextType="uniform"
+        android:textStyle="italic|bold"
+        android:switchPadding = "100dp"
+        android:textAllCaps="true"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:thumbTint="@color/orange"
+        app:trackTint="@color/blue"
+        android:textColor="?colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/txtWallpapers"
+        style="@style/CustomTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:text="@string/txtWallpapers"
+        android:textSize="@dimen/_30ssp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_change"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchDarkTheme"
+        app:layout_constraintHorizontal_bias="0"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_change"
+        style="@style/CustomMaterialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtWallpapers"
+        app:layout_constraintBottom_toBottomOf="@+id/txtWallpapers"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:text="@string/txtChange"
+        android:layout_marginStart="@dimen/_16sdp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

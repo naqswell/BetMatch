@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rv_linear_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="?colorPrimary"
+    android:divider="@drawable/divider"
+    android:showDividers="middle"
+    >
+
+    <TextView
+        android:id="@+id/txtNumber"
+        style="@style/CustomDefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="№"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/txtNumber"
+        />
+
+    <TextView
+        android:id="@+id/txtTeam"
+        style="@style/CustomDefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Команда"
+        android:layout_weight="5"
+        android:textAlignment="center"
+        android:text="@string/txtTeam"
+        />
+
+    <TextView
+        android:id="@+id/txtGames"
+        style="@style/CustomDefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="И"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/txtGames"
+        />
+
+    <TextView
+        android:id="@+id/txtWons"
+        style="@style/CustomDefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="В"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/txtWons"
+        />
+
+    <TextView
+        android:id="@+id/txtDraws"
+        style="@style/CustomDefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Н"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/txtDraws"
+        />
+
+    <TextView
+        android:id="@+id/txtLosses"
+        style="@style/CustomDefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="П"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/txtWins"
+        />
+
+    <TextView
+        android:id="@+id/txtGoals"
+        style="@style/CustomDefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Мячи"
+        android:layout_weight="2"
+        android:textAlignment="center"
+        android:text="@string/txtGoals"
+        />
+
+</LinearLayout>

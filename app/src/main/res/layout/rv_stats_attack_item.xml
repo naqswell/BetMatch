@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rv_linear_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?colorPrimary"
+    android:divider="@drawable/divider"
+    android:showDividers="middle"
+    >
+
+
+    <TextView
+        android:id="@+id/txtTeam"
+        style="@style/CustomDefaultTextViewSmaller"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Команда"
+        android:layout_weight="5"
+        android:textAlignment="textStart"
+        android:text="@string/txtTeam"
+        />
+
+    <TextView
+        android:id="@+id/txtTournament"
+        style="@style/CustomDefaultTextViewSmaller"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Турнир"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:text="@string/txtTournament"
+        />
+
+    <TextView
+        android:id="@+id/txtShots"
+        style="@style/CustomDefaultTextViewSmaller"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Удары з.и."
+        android:layout_weight="2"
+        android:textAlignment="center"
+        android:text="@string/txtShots1"
+        />
+
+    <TextView
+        android:id="@+id/txtDribbling"
+        style="@style/CustomDefaultTextViewSmaller"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Дриблинг"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:text="@string/txtDribbling"
+        />
+
+    <TextView
+        android:id="@+id/txtRating"
+        style="@style/CustomDefaultTextViewSmaller"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Рейтинг"
+        android:layout_weight="2"
+        android:textAlignment="center"
+        android:text="@string/txtRating"
+        />
+
+</LinearLayout>

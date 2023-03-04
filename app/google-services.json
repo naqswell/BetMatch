@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "382061731182",
+    "project_id": "allfootball-bcfde",
+    "storage_bucket": "allfootball-bcfde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382061731182:android:e07c63bba15ac14b44f57f",
+        "android_client_info": {
+          "package_name": "com.naqswell.allfootball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382061731182-8qt9kk8qoj8317m7e6sktl57nmuvf6pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVwkoGAzix59u60E72b1ZOG0ywjM0lejY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382061731182-8qt9kk8qoj8317m7e6sktl57nmuvf6pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

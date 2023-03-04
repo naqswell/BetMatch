@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    >
+
+    <ImageView
+        android:id="@+id/img_title_1"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/betmatch"
+        app:layout_constraintBottom_toTopOf="@+id/btn_russia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="ContentDescription"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_russia"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_england"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:text="@string/russia"
+        app:layout_constraintVertical_bias="0.7"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_england"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_russia"
+        app:layout_constraintBottom_toTopOf="@+id/btn_germany"
+        android:text="@string/england"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_germany"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_england"
+        app:layout_constraintBottom_toTopOf="@+id/btn_spain"
+        android:text="@string/germany"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_spain"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_germany"
+        android:text="@string/spain"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
